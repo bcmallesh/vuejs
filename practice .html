@@ -9,13 +9,10 @@
 
 <body>
 <div id="practice">
-<button v-on:click="counter++">increase</button>
+<button @click="changeLink">click to change link:{{link}}</button>
 
 
-<button v-on:click="counter--">decrease</button>
-<button v-on:click="secondCounter++">increase second</button>
-<p>counter::{{counter}}/{{secondCounter}}</p>
-<p>result::{{result()}}/{{output}}</p>
+<a :href="link">link</a>
 </div>
 </body>
 <script type="text/javascript" src="practice.js"></script>
