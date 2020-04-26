@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="vue.js"></script>
+	
+	<title>Vue Js App</title>
+</head>
+
+
+<body>
+<div id="practice-twolwaybinding">
+<button v-on:click="counter++">increase</button>
+<button v-on:click="counter--">decrease</button>
+
+counter::{{counter}}
+result::{{result()}}
+</div>
+</body>
+<script type="text/javascript" src="practice-twolwaybinding.js"></script>
+</html>
