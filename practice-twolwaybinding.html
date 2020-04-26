@@ -10,10 +10,12 @@
 <body>
 <div id="practice-twolwaybinding">
 <button v-on:click="counter++">increase</button>
-<button v-on:click="counter--">decrease</button>
 
-counter::{{counter}}
-result::{{result()}}
+
+<button v-on:click="counter--">decrease</button>
+<button v-on:click="secondCounter++">increase second</button>
+<p>counter::{{counter}}/{{secondCounter}}</p>
+<p>result::{{result()}}/{{output}}</p>
 </div>
 </body>
 <script type="text/javascript" src="practice-twolwaybinding.js"></script>
