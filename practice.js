@@ -1,6 +1,6 @@
 new Vue({
 
-el:'#practice-twolwaybinding',
+el:'#practice',
 data:{
 name :'Chinna Mallesh',
 counter:0,
@@ -20,5 +20,13 @@ result:function(){
 	return this.counter>5?'greater than 5':'less than 5'
 }
 	
+},
+watch:{
+	counter:function(value){
+		var vm=this;
+		setTimeout(function(){
+			vm.counter=0;
+		},4000);
+	}
 }
 });
