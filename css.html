@@ -14,21 +14,20 @@
 
 
 <div
-            class="demo"
-            @click="attachRed= !attachRed"
-            :class="divClasses">
+            class="demo" :style="{backgroundColor:color}"
+            >
+    </div>
+    <div
+            class="demo" :style="mystyle"
+            >
     </div>
     <div
             class="demo"
-            :class="{red: !attachRed}">
-    </div>
-    <div
-            class="demo"
-            :class="[color,{red: !attachRed}]">
+            >
     </div>
     <hr>
     <input type="text" v-model="color">
-
+    <input type="text" v-model="width">
 
 </div>
 </body>
