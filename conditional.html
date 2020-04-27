@@ -28,6 +28,16 @@
 <h1> {{ingradient}}</h1>
 <p> {{i}}</p>
 </template>
+<hr>
+<ul>
+<li v-for="(person,i) in persons">{{person.name}}-{{person.age}}-{{person.desgnation}}</li>
+</ul>
+<hr>
+<ul>
+<li v-for="(person,i) in persons">
+<div v-for="(value,key,index) in person">{{key}}-{{value}}-({{index}})</div>
+</li>
+</ul>
 </div>
 </body>
 <script type="text/javascript" src="conditional.js"></script>
