@@ -23,6 +23,11 @@
 <ul>
 <li v-for="(ingradient,index) in ingradients">{{ingradient}} ({{index}})</li>
 </ul>
+
+<template v-for="(ingradient,i) in ingradients">
+<h1> {{ingradient}}</h1>
+<p> {{i}}</p>
+</template>
 </div>
 </body>
 <script type="text/javascript" src="conditional.js"></script>
