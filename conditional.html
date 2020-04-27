@@ -20,6 +20,9 @@
 </template>
 <p v-show="show">you can see me! with v-show</p>
 <button @click="show=!show">Switch</button>
+<ul>
+<li v-for="ingradient in ingradients">{{ingradient}}</li>
+</ul>
 </div>
 </body>
 <script type="text/javascript" src="conditional.js"></script>
